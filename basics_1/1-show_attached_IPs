@@ -2,4 +2,4 @@
 # Script that displays all active IPv4 IPs on the machine
 
 # Use ip command to list IPv4 addresses, filter and print only the IPs
-ip -4 addr show | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
+ifconfig | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
