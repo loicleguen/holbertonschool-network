@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Script that listens on port 98 on localhost
+
+# Use nc (netcat) to listen on port 98, IPv4 only, and stay open for multiple connections
+nc -l 127.0.0.1 98
